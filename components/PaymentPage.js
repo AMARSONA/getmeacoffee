@@ -105,7 +105,7 @@ const PaymentPage = ({ username }) => {
 
                 <div className='font-bold text-lg'>@{username}</div>
                 <div className='text-slate-400'>
-                    Let's help {username} to get a cup of Coffee !
+                   Let&apos;s help {username} to get a cup of Coffee !
                 </div>
                 <div>
                     {payments.length} Payments . {currentUser.username} has raised ₹{payments.reduce((acc, payment) => acc + payment.amount, 0)} so far.
@@ -119,7 +119,7 @@ const PaymentPage = ({ username }) => {
                             {payments.map((payment, index) => {
                                 return <li key={index} className='my-4 flex gap-2 items-center'>
                                     <img width={40} src="/avatar.gif" alt="useravatar" />
-                                    <span>{payment.name} donated <span className='font-bold'> ₹ {payment.amount}</span> with a message "{payment.message}"</span>
+                                    <span>{payment.name} donated <span className='font-bold'> ₹ {payment.amount}</span> with a message &quot;{payment.message}&quot;</span>
                                     </li>
                             })}
 
